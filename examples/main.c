@@ -1,32 +1,3 @@
-# PPM
-
-A C library for working with `ppm` images
-
-## Installation
-
-```sh
-cpm install ppm
-```
-
-```cmake
-add_subdirectory(lib/ppm)
-
-target_include_directories(<target>
-	PRIVATE
-		${CMAKE_CURRENT_SOURCE_DIR}/lib/ppm/include
-)
-
-target_link_libraries(<target>
-	PRIVATE
-		ppm
-)
-```
-
-## Example usage
-
-```c
-// main.c
-
 #include "ppm/ppm.h"
 
 #include <stdio.h>
@@ -48,13 +19,3 @@ int main(int argc, char *argv[]) {
 
 	return EXIT_SUCCESS;
 }
-```
-
-Output:
-
-```sh
-$ ./main image.ppm
-Image type: P6
-Image dimensions: 1024 x 683
-Maximum color value: 255
-```
