@@ -1,6 +1,6 @@
 {
     "name": "ppm",
-    "version": "0.1.0",
+    "version": "1.0.0",
     "url": "https://github.com/cpm-examples/ppm",
     "description": "A C library for working with ppm images",
     "author": "YassenEfremov",
